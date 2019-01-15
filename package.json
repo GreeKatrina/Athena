@@ -1,14 +1,24 @@
 {
     "name": "athena",
-    "displayName": "Athena",
+    "displayName": "Athena Theme",
     "description": "A light color theme for those too picky to choose.",
     "version": "0.0.1",
+    "homepage": "https://github.com/GreeKatrina/Athena/blob/master/README.md",
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/GreeKatrina/Athena.git"
+	},
     "engines": {
         "vscode": "^1.30.0"
     },
     "categories": [
         "Themes"
     ],
+    "icon": "icon.png",
+    "galleryBanner": {
+        "color": "#B2B2BD",
+        "theme": "light"
+    },
     "contributes": {
         "themes": [
             {
