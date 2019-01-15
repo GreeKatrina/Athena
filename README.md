@@ -4,7 +4,7 @@
 
 A light color theme for those too picky to choose. Made for Visual Studio Code.
 
-![Theme Screenshot](preview.png)
+![Theme Screenshot](https://github.com/GreeKatrina/Athena/blob/master/preview.png)
 
 </div>
 
