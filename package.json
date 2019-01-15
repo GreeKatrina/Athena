@@ -2,7 +2,8 @@
     "name": "athena",
     "displayName": "Athena Theme",
     "description": "A light color theme for those too picky to choose.",
-    "version": "0.0.1",
+    "version": "0.0.2",
+    "publisher": "katrinacodes",
     "homepage": "https://github.com/GreeKatrina/Athena/blob/master/README.md",
     "repository": {
 		"type": "git",
