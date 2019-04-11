@@ -1,32 +1,49 @@
 {
-    "name": "athena",
-    "displayName": "Athena Theme",
-    "description": "A light color theme for those too picky to choose.",
-    "version": "0.0.2",
-    "publisher": "katrinacodes",
-    "homepage": "https://github.com/GreeKatrina/Athena/blob/master/README.md",
-    "repository": {
-		"type": "git",
-		"url": "https://github.com/GreeKatrina/Athena.git"
-	},
-    "engines": {
-        "vscode": "^1.30.0"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "icon": "icon.png",
-    "galleryBanner": {
-        "color": "#B2B2BD",
-        "theme": "light"
-    },
-    "contributes": {
-        "themes": [
-            {
-                "label": "Athena",
-                "uiTheme": "vs",
-                "path": "./themes/Athena-color-theme.json"
-            }
-        ]
-    }
+  "name": "athena",
+  "displayName": "Athena",
+  "description": "A light color theme for those too picky to choose.",
+  "version": "0.0.2",
+  "publisher": "katrinacodes",
+  "license": "SEE LICENSE",
+  "homepage": "https://github.com/GreeKatrina/Athena/blob/master/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GreeKatrina/Athena.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GreeKatrina/Athena/issues",
+    "email": "katrinacodes@gmail.com"
+  },
+  "keywords": [
+    "Athena",
+    "Theme",
+    "Dark Theme",
+    "Light Theme",
+    "High Contrast Theme",
+    "Accessible Theme",
+    "Color Theme"
+  ],
+  "engines": {
+    "vscode": "^1.30.0"
+  },
+  "scripts": {
+    "publish": "vsce publish"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#B2B2BD",
+    "theme": "light"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Athena Light",
+        "uiTheme": "vs",
+        "path": "./themes/Athena Light-color-theme.json"
+      }
+    ]
+  }
 }
