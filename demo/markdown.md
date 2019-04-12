@@ -1,21 +1,21 @@
-# Night Owl Theme
+# Athena Theme
 
-> Night Owl theme for VS Code.
+[![version-badge]][CHANGELOG]
 
-![Preview](images/preview.gif)
+> Athena theme for VS Code.
 
 # Installation
 
 1.  Install [Visual Studio Code](https://code.visualstudio.com/)
 2.  Launch Visual Studio Code
 3.  Choose **Extensions** from menu
-4.  Search for `night-owl`
+4.  Search for `Athena` by **katrinacodes**.
 5.  Click **Install** to install it
 6.  Click **Reload** to reload the Code
-7.  File > Preferences > Color Theme > **Night Owl**
+7.  _File_ > _Preferences_ > _Color Theme_ > **Night Owl**
 
--[ ] check check 12 12
--[ ] check check 12 12
+- [x] check check 12 12
+- [ ] check check 12 12
 
 Heading 1
 ========
@@ -24,3 +24,8 @@ Heading 2
 --------------
 
 ### Heading 3
+
+Regular text
+
+[CHANGELOG]: ./CHANGELOG.md
+[version-badge]: https://vsmarketplacebadge.apphb.com/version/katrinacodes.athena.svg

@@ -1,11 +1,28 @@
-.someClass {
-  font-family: serif;
+body {
+  background: #000000;
 }
 
-#someID {
+#someID > .someClass {
   background: yellow;
 }
 
-main {
-  margin-top: 20px;
+input[type*="text"] {
+  margin: 0px 5em 10px 20em;
+}
+
+div:nth-child(4n) {
+  background-image: url("https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png");
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  display: hello;
+}
+
+p::first-line {
+  text-transform: uppercase;
+}
+
+button:hover {
+  color: blue !important;
+  width: 100%;
 }

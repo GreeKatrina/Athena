@@ -1,10 +1,13 @@
 <?php
-class HelloWorldTest extends PHPUnit_Framework_TestCase
+class HelloWorldTest extends PHPUnit_Framework_TestCase implements HelloInterface, WorldInterface
 {
     /**
-     * @var PDO
+     * Comment
+     *
+     * @var PDO Description of var with a {@link getDb()}
      */
     private $pdo;
+
     public function setUp()
     {
         $this->pdo = new PDO($GLOBALS['db_dsn'], $GLOBALS['db_username'], $GLOBALS['db_password']);
@@ -13,11 +16,12 @@ class HelloWorldTest extends PHPUnit_Framework_TestCase
     }
     public function tearDown()
     {
+        $helloWorld = 'hi';
+        $this->testHelloWorld($helloWorld);
         $this->pdo->query("DROP TABLE hello");
     }
-    public function testHelloWorld()
+    public function testHelloWorld($helloWorld)
     {
-        $helloWorld = new HelloWorld($this->pdo);
         $this->assertEquals('Hello World', $helloWorld->hello());
     }
     public function testHello()
@@ -28,9 +32,10 @@ class HelloWorldTest extends PHPUnit_Framework_TestCase
     public function testWhat()
     {
         $helloWorld = new HelloWorld($this->pdo);
-        $this->assertFalse($helloWorld->what());
-        $helloWorld->hello('Bar');
-        $this->assertEquals('Bar', $helloWorld->what());
+
+        if ($helloWorld->what() === false) {
+            $helloWorld->hello('Bar');
+        }
     }
 }
 ?>

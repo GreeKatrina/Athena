@@ -17,10 +17,12 @@ class App extends React.Component {
   }
 
   render() {
+    const total = this.state.next || this.state.total || 0;
+
     return (
       <div className="component-app">
         Tacos
-        <Display value={this.state.next || this.state.total || '0'} />
+        <Display value={total} />
         <ButtonPanel clickHandler={this.handleClick} />
       </div>
     )
