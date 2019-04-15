@@ -298,13 +298,14 @@
 				"meta.block",
 				"meta.braces",
 				"meta.brace.curly",
+				"punctuation.definition.block",
+				"punctuation.definition.class.begin",
+				"punctuation.definition.class.end",
 				"punctuation.section.block.begin",
 				"punctuation.section.block.end",
 				"punctuation.section.braces.begin",
 				"punctuation.section.braces.end ",
 				"punctuation.section.scope",
-				"punctuation.definition.class.begin",
-				"punctuation.definition.class.end",
 				// []
 				"meta.brackets",
 				"meta.brace.square",
@@ -318,6 +319,8 @@
 				"punctuation.definition.generic.begin",
 				"punctuation.definition.generic.end",
 				"punctuation.definition.tag",
+				"punctuation.definition.entity.begin.bracket.square",
+				"punctuation.definition.entity.end.bracket.square",
 				// ()
 				"meta.group",
 				"meta.parens",
@@ -365,6 +368,7 @@
 				"comment.block",
 				"comment.block.documentation",
 				"comment.line",
+				"punctuation.definition.comment",
 			],
 			"settings": {
 				"fontStyle": "italic",
@@ -382,6 +386,7 @@
 				"string.regexp",
 				"punctuation.definition.group.regexp",
 				"punctuation.definition.group.capture.regexp",
+				"punctuation.definition.string",
 				// Property names and attributes
 				"constant.language.symbol.hashkey",
 				"meta.property-name",
@@ -412,7 +417,6 @@
 				"entity.name.trait",
 				"entity.name.interface",
 				"entity.name.type",
-				// "meta.definition.function.initializer",
 				"meta.function",
 				"meta.function-call",
 				"meta.method-call",
@@ -441,6 +445,7 @@
 			"name": "Current Class",
 			"scope": [
 				"entity.name.type.class",
+				"punctuation.definition.entity",
 			],
 			"settings": {
 				"fontStyle": "bold italic",
@@ -459,7 +464,8 @@
 				"meta.namespace-block",
 				"meta.other.inherited-class",
 				"meta.path",
-				"support.other.namespace"
+				"support.other.namespace",
+				"meta.at-rule.extend"
 			],
 			"settings": {
 				"fontStyle": "italic",
@@ -532,9 +538,6 @@
 				"entity.name.tag",
 				"entity.name.section",
 				"entity.name.filename.find-in-files",
-				"entity.other.attribute-name.pseudo-element",
-				"entity.other.attribute-name.pseudo-class",
-				"meta.tag",
 			],
 			"settings": {
 				"fontStyle": "italic",
@@ -544,12 +547,13 @@
 		{
 			"name": "Keyword",
 			"scope": [
-				"keyword",
 				"keyword.control",
 				"keyword.operator",
 				"keyword.operator.new",
 				"keyword.operator.arithmetic",
 				"keyword.operator.assignment.augmented",
+				"keyword.other",
+				"punctuation.definition.directive",
 				// In Ruby, vertical bars in code blocks.
 				"punctuation.separator.variable",
 				// The literal words.
@@ -624,41 +628,25 @@
 			}
 		},
 		/*
-			LANGUAGE SPECIFIC
+			CLOJURE
 		*/
 		{
-			"name": "HTML - Text",
-			"scope": "text.html",
+			"name": "Clojure - Symbols",
+			"scope": "meta.symbol.clojure",
 			"settings": {
-				"foreground": "#00BD94"
+        "foreground": "#00BD94"
 			}
 		},
 		{
-			"name": "CSS/LESS/SASS - Combinators like > and +",
-			"scope": [
-				"keyword.operator.combinator.css",
-			],
+			"name": "Clojure - Entities",
+			"scope": "entity.global.clojure",
 			"settings": {
-				"foreground": "#000000"
-			}
-		},
-		{
-			"name": "CSS/LESS/SASS - Pattern Operators",
-			"scope": [
-				"keyword.operator.pattern.css",
-				"keyword.other.important.css"
-			],
-			"settings": {
-				"foreground": "#F07C00"
-			}
-		},
-		{
-      "name": "CSS/LESS/SASS - Units like px",
-      "scope": "keyword.other.unit",
-      "settings": {
         "foreground": "#0090F0"
-      }
-    },
+			}
+		},
+		/*
+			CSS/LESS/SASS
+		*/
 		{
       "name": "CSS/LESS/SASS - Ids",
       "scope": "entity.other.attribute-name.id.css",
@@ -680,63 +668,24 @@
 			"name": "CSS/LESS/SASS - Browser Specific Properties",
 			"scope": "support.type.vendored.property-name.css",
 			"settings": {
-				"foreground": "#00BD94"
-			}
-		},
-		{
-			"name": "CSS/LESS/SASS - Property Names",
-			"scope": [
-				"support.type.property-name.css"
-			],
-			"settings": {
-				"foreground": "#00BD94"
-			}
-		},
-		{
-      "name": "CSS/LESS/SASS - Attribute Names in brackets",
-      "scope": "entity.other.attribute-name.css",
-      "settings": {
-        "foreground": "#00BD94"
-      }
-		},
-		{
-			"name": "CSS/LESS/SASS - Pseudo Selectors",
-			"scope": [
-				"entity.other.attribute-name.pseudo-element.css",
-				"entity.other.attribute-name.pseudo-class.css"
-			],
-			"settings": {
+				"fontStyle": "italic",
 				"foreground": "#9147FF"
 			}
 		},
 		{
       "name": "CSS/LESS/SASS - Values",
       "scope": [
-				"support.constant.property-value.css",
-				"constant.numeric.css",
-				"support.constant.color.w3c-standard-color-name.css",
-				"meta.at-rule.extend.scss",
 				"meta.at-rule.include.scss"
 			],
       "settings": {
-        "foreground": "#9147FF"
+        "foreground": "#00BD94"
       }
 		},
+		/*
+			JSON
+		*/
 		{
-			"name": "SASS - Variables",
-			"scope": [
-				"variable.scss",
-				"variable.less"
-			],
-			"settings": {
-				"fontStyle": "bold",
-				"foreground": "#9147FF"
-			}
-		},
-
-
-		{
-      "name": "JSON Quotes Keys",
+      "name": "JSON - Quotes Keys",
       "scope": [
 				"punctuation.support.type.property-name.begin.json",
 				"punctuation.support.type.property-name.end.json",
@@ -746,7 +695,7 @@
       }
 		},
 		{
-			"name": "JSON Keys",
+			"name": "JSON - Keys",
 			"scope": [
 				"support.type.property-name.json"
 			],
@@ -755,7 +704,7 @@
 			}
 		},
 		{
-			"name": "JSON Colon",
+			"name": "JSON - Colon",
 			"scope": [
 				"punctuation.separator.dictionary.key-value.json"
 			],
@@ -763,39 +712,51 @@
 				"foreground": "#DB4487"
 			}
 		},
+		/*
+			JSX
+		*/
 		{
-      "name": "JSX - HTML text",
-      "scope": "JSXNested",
-      "settings": {
-        "foreground": "#9147FF"
-      }
-    },
+			"name": "JSX - Nested Text",
+			"scope": "JSXNested",
+			"settings": {
+        "foreground": "#000000"
+			}
+		},
 		{
-			"name": "PHP $",
+			"name": "JSX - {} for attribute values",
+			"scope": [
+				"punctuation.section.embedded.begin.jsx",
+				"punctuation.section.embedded.end.jsx",
+			],
+			"settings": {
+        "foreground": "#DB4487"
+			}
+		},
+		/*
+			PHP
+		*/
+		{
+			"name": "PHP - $",
       "scope": "punctuation.definition.variable.php",
       "settings": {
         "foreground": "#00BD94"
       }
 		},
+		/*
+			Ruby
+		*/
 		{
-			"name": "Clojure Symbols",
-			"scope": "meta.symbol.clojure",
+			"name": "Ruby - .new",
+			"scope": "keyword.other.special-method.ruby",
 			"settings": {
-        "foreground": "#00BD94"
-			}
-		},
-		{
-			"name": "Clojure Entities",
-			"scope": "entity.global.clojure",
-			"settings": {
-        "foreground": "#0090F0"
+        "foreground": "#DB4487"
 			}
 		},
 		/*
 			MARKUP AND GIT
 		*/
 		{
-			"name": "Markup Heading",
+			"name": "Markup - Heading",
 			"scope": [
 				"markup.heading",
 			],
@@ -805,7 +766,7 @@
 			}
 		},
 		{
-			"name": "Markup Lists",
+			"name": "Markup - Lists",
 			"scope": [
 				"markup.list",
 			],
@@ -815,7 +776,7 @@
 			}
 		},
 		{
-			"name": "Markup Links",
+			"name": "Markup - Links",
 			"scope": "markup.underline.link",
 			"settings": {
 				"foreground": "#9147FF",
@@ -823,7 +784,7 @@
 			}
 		},
 		{
-			"name": "Markup Quotes",
+			"name": "Markup - Quotes",
 			"scope": "markup.quote",
 			"settings": {
 				"foreground": "#0090F0",
@@ -831,7 +792,7 @@
 			}
 		},
 		{
-			"name": "Markup Code",
+			"name": "Markup - Code",
 			"scope": [
 				"markup.raw.inline",
 				"markup.inline.raw",
@@ -845,21 +806,21 @@
 			}
 		},
 		{
-			"name": "Markup Bold Text",
+			"name": "Markup - Bold Text",
 			"scope": "markup.bold",
 			"settings": {
 				"fontStyle": "bold"
 			}
 		},
 		{
-			"name": "Markup Italic Text",
+			"name": "Markup - Italic Text",
 			"scope": "markup.italic",
 			"settings": {
 				"fontStyle": "italic"
 			}
 		},
 		{
-			"name": "Markup Underline Text",
+			"name": "Markup - Underline Text",
 			"scope": "markup.underline",
 			"settings": {
 				"fontStyle": "underline"
