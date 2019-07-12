@@ -35,6 +35,18 @@ module ExampleModule
     def user_params
       params.require(:user).permit(:username, :email, :password)
       params.pluck(:user)
+
+      PolicyRatingMapper.new(
+        profile_rating_data_lookup_hash,
+        @rules,
+        @underwriting_rules,
+        @as_of,
+        :insurance_score_report => insurance_score_report,
+        :fico_score_report => fico_score_report,
+        :current_carrier_report => current_carrier_report,
+        :prior_coverage_report => prior_coverage,
+        :internal_insurance_score => internal_insurance_score
+      ).data
     end
   end
 end

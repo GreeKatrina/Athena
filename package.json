@@ -43,6 +43,11 @@
         "label": "Athena Light",
         "uiTheme": "vs",
         "path": "./themes/Athena Light-color-theme.json"
+      },
+      {
+        "label": "Athena Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Athena Dark-color-theme.json"
       }
     ]
   }
