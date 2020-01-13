@@ -19,7 +19,7 @@ module ExampleModule
     private
 
     def other_method(*args)
-      puts 'doing other stuff #{42}'
+      puts `doing other stuff #{args}`
     end
 
     def self.private
@@ -34,18 +34,17 @@ module ExampleModule
 
     def user_params
       params.require(:user).permit(:username, :email, :password)
-      params.pluck(:user)
 
-      PolicyRatingMapper.new(
-        profile_rating_data_lookup_hash,
-        @rules,
-        @underwriting_rules,
-        @as_of,
-        :insurance_score_report => insurance_score_report,
-        :fico_score_report => fico_score_report,
-        :current_carrier_report => current_carrier_report,
-        :prior_coverage_report => prior_coverage,
-        :internal_insurance_score => internal_insurance_score
+      username = params[:user][:username]
+      email = params[:user][:email]
+      password = params[:user][:password]
+
+      Mapper.new(
+        @@class_var,
+        @instance_var,
+        :username => username,
+        :email => email,
+        :password => password
       ).data
     end
   end
