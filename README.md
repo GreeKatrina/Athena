@@ -2,9 +2,10 @@
 
 # Athena Theme
 
-A light and dark color theme for those too picky to choose. Made for Visual Studio Code.
+Color themes for those too picky to choose. Made for Visual Studio Code.
 
-![Theme Screenshot](preview.png)
+![Dark Theme Screenshot](images/dark-preview.png)
+![Light Theme Screenshot](images/light-preview.png)
 
 </div>
 

@@ -7,7 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.0.0]
+
+## [1.0.1] - 2020-01-13
+### Changed
+- Dark Theme bracket selection colors.
+- README update includes previews for light and dark theme.
+
+## [1.0.0] - 2020-01-13
 ### Added
 - Dark Theme.
 - No Italic variations for both light and dark themes.
@@ -27,4 +33,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 [0.0.2]: https://github.com/GreeKatrina/Athena/tree/v0.0.2
 [1.0.0]: https://github.com/GreeKatrina/Athena/compare/v0.0.1...v1.0.0
-[Unreleased]: https://github.com/GreeKatrina/Athena/compare/v1.0.0...HEAD
+[1.0.1]: https://github.com/GreeKatrina/Athena/compare/v1.0.0...v1.0.1
+[Unreleased]: https://github.com/GreeKatrina/Athena/compare/v1.0.1...HEAD
