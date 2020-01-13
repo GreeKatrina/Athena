@@ -5,7 +5,8 @@
 		"activityBar.background": "#9147FF",
 		"activityBar.border": "#9147FF",
 		"activityBar.dropBackground": "#8441FF",
-    "activityBar.foreground": "#FFFFFF",
+		"activityBar.foreground": "#FFFFFF",
+		"activityBar.inactiveForeground": "#000000",
     "activityBarBadge.background": "#00B8AE",
 		"activityBarBadge.foreground": "#FFFFFF",
 		"badge.background": "#9147FF",
@@ -20,6 +21,21 @@
 		"button.hoverBackground": "#8441FF",
 		"debugExceptionWidget.background": "#D4D4D9",
 		"debugExceptionWidget.border": "#DB4487",
+		"debugIcon.breakpointCurrentStackframeForeground": "#0090F0",
+		"debugIcon.breakpointDisabledForeground": "#525252",
+		"debugIcon.breakpointForeground": "#DB4487",
+		"debugIcon.breakpointStackframeForeground": "#0090F0",
+		"debugIcon.breakpointUnverifiedForeground": "#525252",
+		"debugIcon.stopForeground": "#DB4487",
+    "debugIcon.continueForeground": "#00BD94",
+    "debugIcon.disconnectForeground": "#00BD94",
+    "debugIcon.pauseForeground": "#00BD94",
+    "debugIcon.restartForeground": "#0090F0",
+    "debugIcon.startForeground": "#00BD94",
+    "debugIcon.stepBackForeground": "#AC80FF",
+    "debugIcon.stepIntoForeground": "#AC80FF",
+    "debugIcon.stepOutForeground": "#AC80FF",
+    "debugIcon.stepOverForeground": "#AC80FF",
 		"debugToolBar.background": "#B2B2BD",
     "debugToolBar.border": "#9147FF",
 		"descriptionForeground": "#262626",
@@ -72,6 +88,8 @@
 		"editorIndentGuide.activeBackground": "#666666",
 		"editorIndentGuide.background": "#B2B2BD",
 		"editorInfo.foreground": "#0090F0",
+		"editorLightBulb.foreground": "#EBDB00",
+    "editorLightBulbAutoFix.foreground": "#EBDB00",
 		"editorLineNumber.activeForeground": "#000000",
 		"editorLineNumber.foreground": "#525252",
 		"editorLink.activeForeground": "#9147FF",
@@ -167,7 +185,10 @@
 		"notificationLink.foreground": "#FFFFFF",
 		"notifications.background": "#FFFFFF",
     "notifications.border": "#262626",
-    "notifications.foreground": "#262626",
+		"notifications.foreground": "#262626",
+		"notificationsErrorIcon.foreground": "#DB2100",
+    "notificationsInfoIcon.foreground": "#0090F0",
+    "notificationsWarningIcon.foreground": "#F07C00",
 		"notificationToast.border": "#262626",
 		"panel.background": "#F2F3F4",
     "panel.border": "#AC80FF",
@@ -191,6 +212,9 @@
 		"peekViewTitleLabel.foreground": "#FFFFFF",
 		"pickerGroup.foreground": "#00948D",
 		"pickerGroup.border": "#00948D",
+    "problemsErrorIcon.foreground": "#DB2100",
+    "problemsInfoIcon.foreground": "#0090F0",
+    "problemsWarningIcon.foreground": "#F07C00",
 		"progressBar.background": "#00A39B",
 		"scrollbar.shadow": "#D4D4D9",
 		"scrollbarSlider.activeBackground": "#B2B2BD",
@@ -229,6 +253,39 @@
     "statusBarItem.hoverBackground": "#00A39B",
     "statusBarItem.prominentBackground": "#AC80FF",
 		"statusBarItem.prominentHoverBackground": "#9147FF",
+		"symbolIcon.arrayForeground": "#FFFFFF",
+		"symbolIcon.classForeground": "#0090F0",
+		"symbolIcon.colorForeground": "#FFFFFF",
+		"symbolIcon.constantForeground": "#F07C00",
+		"symbolIcon.constructorForeground": "#0090F0",
+		"symbolIcon.enumeratorForeground": "#0090F0",
+		"symbolIcon.enumeratorMemberForeground": "#F07C00",
+		"symbolIcon.functionForeground": "#0090F0",
+		"symbolIcon.interfaceForeground": "#0090F0",
+		"symbolIcon.keywordForeground": "#F07C00",
+		"symbolIcon.methodForeground": "#0090F0",
+		"symbolIcon.namespaceForeground": "#0090F0",
+		"symbolIcon.nullForeground": "#F07C00",
+		"symbolIcon.numberForeground": "#F07C00",
+		"symbolIcon.objectForeground": "#FFFFFF",
+		"symbolIcon.operatorForeground": "#F07C00",
+		"symbolIcon.packageForeground": "#0090F0",
+		"symbolIcon.referenceForeground": "#F07C00",
+		"symbolIcon.stringForeground": "#F07C00",
+		"symbolIcon.textForeground": "#F07C00",
+		"symbolIcon.typeParameterForeground": "#F07C00",
+		"symbolIcon.unitForeground": "#F07C00",
+		"symbolIcon.variableForeground": "#0090F0",
+    "symbolIcon.booleanForeground": "#F07C00",
+    "symbolIcon.eventForeground": "#0090F0",
+    "symbolIcon.fieldForeground": "#F07C00",
+    "symbolIcon.fileForeground": "#FFFFFF",
+    "symbolIcon.folderForeground": "#FFFFFF",
+    "symbolIcon.keyForeground": "#F07C00",
+    "symbolIcon.moduleForeground": "#0090F0",
+    "symbolIcon.propertyForeground": "#F07C00",
+    "symbolIcon.snippetForeground": "#FFFFFF",
+    "symbolIcon.structForeground": "#FFFFFF",
 		"tab.activeBackground": "#9147FF",
 		"tab.activeBorder": "#9147FF",
 		"tab.activeBorderTop": "#9147FF",
@@ -324,6 +381,7 @@
 				// ()
 				"meta.group",
 				"meta.parens",
+				"meta.paragraph",
 				"meta.brace.round",
 				"punctuation.definition.arguments.begin",
 				"punctuation.definition.arguments.end",
@@ -687,30 +745,13 @@
 		{
       "name": "JSON - Quotes Keys",
       "scope": [
+				"support.type.property-name.json",
 				"punctuation.support.type.property-name.begin.json",
 				"punctuation.support.type.property-name.end.json",
 			],
       "settings": {
         "foreground": "#0090F0"
       }
-		},
-		{
-			"name": "JSON - Keys",
-			"scope": [
-				"support.type.property-name.json"
-			],
-			"settings": {
-				"foreground": "#0090F0"
-			}
-		},
-		{
-			"name": "JSON - Colon",
-			"scope": [
-				"punctuation.separator.dictionary.key-value.json"
-			],
-			"settings": {
-				"foreground": "#DB4487"
-			}
 		},
 		/*
 			JSX
@@ -720,16 +761,6 @@
 			"scope": "JSXNested",
 			"settings": {
         "foreground": "#000000"
-			}
-		},
-		{
-			"name": "JSX - {} for attribute values",
-			"scope": [
-				"punctuation.section.embedded.begin.jsx",
-				"punctuation.section.embedded.end.jsx",
-			],
-			"settings": {
-        "foreground": "#DB4487"
 			}
 		},
 		/*
@@ -746,11 +777,11 @@
 			Ruby
 		*/
 		{
-			"name": "Ruby - .new",
-			"scope": "keyword.other.special-method.ruby",
-			"settings": {
-        "foreground": "#DB4487"
-			}
+			"name": "Ruby - source",
+      "scope": "source.ruby",
+      "settings": {
+        "foreground": "#00BD94"
+      }
 		},
 		/*
 			MARKUP AND GIT
@@ -771,7 +802,7 @@
 				"markup.list",
 			],
 			"settings": {
-				"foreground": "#00BD94",
+				"foreground": "#0090F0",
 				"fontStyle": ""
 			}
 		},
@@ -787,7 +818,7 @@
 			"name": "Markup - Quotes",
 			"scope": "markup.quote",
 			"settings": {
-				"foreground": "#0090F0",
+				"foreground": "#00BD94",
 				"fontStyle": ""
 			}
 		},

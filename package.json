@@ -1,7 +1,7 @@
 {
   "name": "athena",
   "displayName": "Athena",
-  "description": "A light color theme for those too picky to choose.",
+  "description": "Color themes for those too picky to choose.",
   "version": "0.0.2",
   "publisher": "katrinacodes",
   "license": "SEE LICENSE",
@@ -16,12 +16,12 @@
   },
   "keywords": [
     "Athena",
-    "Theme",
     "Dark Theme",
     "Light Theme",
     "High Contrast Theme",
+    "Color Theme",
     "Accessible Theme",
-    "Color Theme"
+    "Theme"
   ],
   "engines": {
     "vscode": "^1.30.0"
@@ -34,8 +34,8 @@
   ],
   "icon": "icon.png",
   "galleryBanner": {
-    "color": "#B2B2BD",
-    "theme": "light"
+    "color": "#1A1A1A",
+    "theme": "dark"
   },
   "contributes": {
     "themes": [
